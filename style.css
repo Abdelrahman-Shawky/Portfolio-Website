@@ -115,7 +115,7 @@ section {
 #about {
     padding: 80px,0;
     /* color: #3a6cf4; */
-    color: #ababab;
+    color: #4f4f4f;
 }
 
 .row {
@@ -162,7 +162,7 @@ section {
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #601cfc;
     position: absolute;
     left:0;
     bottom: -8px;
@@ -189,6 +189,11 @@ section {
 
 .tab-contents.active-tab {
     display: block;
+}
+
+.content-points li{
+    list-style:circle !important;
+    /* margin-left: 10px !important; */
 }
 
 
