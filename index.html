@@ -140,8 +140,13 @@
 
     <section class="projects" id="projects">
         <h2 class="title">Projects</h2>
+        <div class="project-titles">
+            <p class="project-links active-link" onclick="openProjects('web')">Web</p>
+            <p class="project-links" onclick="openProjects('machine-learning')">Machine Learning</p>
+            <p class="project-links" onclick="openProjects('applications')">Applications</p>
+        </div>
         <div class="content">
-            <div class="project-card">
+            <div class="project-card web active-card">
                 <div class="project-image">
                     <img src="images/online-shop.jpg" alt="code">
                 </div>
@@ -153,7 +158,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card web active-card">
                 <div class="project-image">
                     <img src="images/car-rental.png" alt="code">
                 </div>
@@ -165,7 +170,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card web active-card">
                 <div class="project-image">
                     <img src="images/web-server.png" alt="code">
                 </div>
@@ -177,19 +182,31 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card applications">
                 <div class="project-image">
                     <img src="images/fruit-ninja.jpg" alt="code">
                 </div>
                 <div class="project-info">
-                    <p class="project-category">Application replicating the popular fruit-slicing game, Fruit Ninja</p>
+                    <p class="project-category">Desktop application replicating the popular fruit-slicing game, Fruit Ninja</p>
                     <strong class="project-title">
                         <span>Fruit Ninja</span>
                         <a href="https://github.com/Abdelrahman-Shawky/MyFruitNinja" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card web active-card">
+                <div class="project-image">
+                    <img src="images/hotel-booking.png" alt="code">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">A hotel booking website built using Laravel Framework and MySQL</p>
+                    <strong class="project-title">
+                        <span>Hotel Booking</span>
+                        <a href="https://github.com/Abdelrahman-Shawky/RestaurantReservation" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card machine-learning">
                 <div class="project-image">
                     <img src="images/modulation-classification.png" alt="code">
                 </div>
@@ -201,7 +218,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card machine-learning">
                 <div class="project-image">
                     <img src="images/heartbeat.jpg" alt="code">
                 </div>
@@ -213,19 +230,19 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card machine-learning">
                 <div class="project-image">
                     <img src="images/faceRognition.png" alt="code">
                 </div>
                 <div class="project-info">
-                    <p class="project-category">Comparing face classification through dimensionality reduction using PCA & LDA</p>
+                    <p class="project-category">Face classification through dimensionality reduction using PCA & LDA</p>
                     <strong class="project-title">
                         <span>Face Recognition</span>
                         <a href="https://github.com/Abdelrahman-Shawky/Face-Recognition" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card machine-learning">
                 <div class="project-image">
                     <img src="images/image-segmentation.png" alt="code">
                 </div>
@@ -237,7 +254,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card machine-learning">
                 <div class="project-image">
                     <img src="images/bert.png" alt="code">
                 </div>
@@ -249,7 +266,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card applications">
                 <div class="project-image">
                     <img src="images/connect-four.PNG" alt="code">
                 </div>
@@ -261,7 +278,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card applications">
                 <div class="project-image">
                     <img src="images/huffman.png" alt="code">
                 </div>
@@ -273,7 +290,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card machine-learning">
                 <div class="project-image">
                     <img src="images/gamma.jpg" alt="code">
                 </div>
@@ -285,7 +302,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card applications">
                 <div class="project-image">
                     <img src="images/shell.jpg" alt="code">
                 </div>
@@ -297,7 +314,7 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card applications">
                 <div class="project-image">
                     <img src="images/sorting.png" alt="code">
                 </div>
@@ -309,12 +326,12 @@
                     </strong>
                 </div>
             </div>
-            <div class="project-card">
+            <div class="project-card applications">
                 <div class="project-image">
                     <img src="images/restaurant-reservation.jpg" alt="code">
                 </div>
                 <div class="project-info">
-                    <p class="project-category">Application developed for customers to reserve tables and meals and staff to review reservation and orders</p>
+                    <p class="project-category">Desktop application developed for customers to reserve tables & meals and staff to review reservations and orders</p>
                     <strong class="project-title">
                         <span>Restaurant Reservation System</span>
                         <a href="https://github.com/Abdelrahman-Shawky/RestaurantReservation" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -370,6 +387,23 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabName).classList.add("active-tab");
         }
+        var projectLinks = document.getElementsByClassName("project-links");
+        var projectContents = document.getElementsByClassName("project-card");
+
+        function openProjects(progectCateg){
+            for(projectLink of projectLinks){
+                projectLink.classList.remove("active-link")
+            }
+            for(projectContent of projectContents){
+                projectContent.classList.remove("active-card")
+            }
+            event.currentTarget.classList.add("active-link");
+            var projectCards = document.getElementsByClassName(progectCateg);
+            for (projectCard of projectCards){
+                projectCard.classList.add("active-card");
+            }
+        }
+
     </script>
 
 </body>

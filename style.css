@@ -92,14 +92,19 @@ section {
 }
 
 .main-btn:hover {
-    background-color: #0a49f6;
+    background-color: #601cfc;
     transform: scale(1.1);
 }
 
-.social-icons a {
+.social-icons a{
     color:#fff;
     font-size: 1.7em;
     padding-right: 30px;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #3a6cf4;
 }
 
 .title {
@@ -193,7 +198,45 @@ section {
 
 .content-points li{
     list-style:circle !important;
-    /* margin-left: 10px !important; */
+}
+
+/* Project */
+.project-titles {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px;
+}
+
+.project-links {
+    margin-right: 50px;
+    font-size: 1.125em;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.project-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #601cfc;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.project-links.active-link::after {
+    width: 50%;
+}
+
+/* .project-card {
+    display: none;
+} */
+
+.project-card.active-card {
+    display: flex;
 }
 
 
@@ -238,6 +281,7 @@ section {
 
 .projects {
     background-color: #000016;
+    padding: 50px 40px;
 }
 
 .projects .content {
@@ -256,6 +300,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    display: none;
 }
 
 .project-card:hover {
@@ -310,6 +355,10 @@ section {
 
 .contact .info p {
     font-size: 1.5em;
+}
+
+.contact {
+    padding: 50px 40px;
 }
 
 .footer {
@@ -409,6 +458,12 @@ section {
         font-size: 1.4em;
     }
 
+    .social-icons a {
+        color:#fff;
+        font-size: 1.7em;
+        padding-right: 10px;
+    }
+
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
         margin-right: 0;
@@ -418,7 +473,6 @@ section {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-
 }
 
 @media (max-width:400px) {
