@@ -12,13 +12,16 @@
     <header>
         <a href="#" class="logo">Portfolio</a>
         <nav class="navigation">
-            <a href="#services">Services</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <!-- <i class="fas fa-times"></i> -->
+            <!-- <i class="fas fa-bars"></i> -->
         </nav>
     </header>
 
-    <section class="main">
+    <section class="main" id="home">
         <div>
             <h2>Hello, I'm Abdelrahman<br><span>Software Engineer</span></h2>
             <h3>I build life changing Projects</h3>
@@ -30,7 +33,47 @@
         </div>
     </section>
 
-    <section class="cards" id="services">
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/code.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>hsbdkvhbsdkvbskjvbkjsdbvkjsdbvkjsdbvkj</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designer Web/App Interfaces</li>
+                            <li><span>Web development</span><br>Designer Web/App Interfaces</li>
+                            <li><span>UI/UX</span><br>Designer Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>2Designer Web/App Interfaces</li>
+                            <li><span>Web development</span><br>2Designer Web/App Interfaces</li>
+                            <li><span>UI/UX</span><br>2Designer Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>3Designer Web/App Interfaces</li>
+                            <li><span>Web development</span><br>3Designer Web/App Interfaces</li>
+                            <li><span>UI/UX</span><br>3Designer Web/App Interfaces</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="cards" id="services">
         <h2 class="title">Services</h2>
         <div class="content">
             <div class="card">
@@ -61,7 +104,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section class="projects" id="projects">
         <h2 class="title">Projects</h2>
@@ -124,5 +167,22 @@
             <a href="#"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link")
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+
+    </script>
 </body>
 </html>
