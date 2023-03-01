@@ -48,7 +48,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/northern-lights.jpg) no-repeat;
+    background: url(images/background6.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -98,8 +98,8 @@ section {
 
 .social-icons a{
     color:#fff;
-    font-size: 1.7em;
-    padding-right: 30px;
+    font-size: 2.5em;
+    padding-right: 40px;
     transition: 0.3s ease;
 }
 
@@ -135,6 +135,7 @@ section {
 }
 
 .about-col-1 img {
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
     width: 100%;
     border-radius: 15px;
 }
@@ -203,12 +204,14 @@ section {
 /* Project */
 .project-titles {
     display: flex;
+    /* flex-direction: row; */
     justify-content: center;
-    margin: 20px 0 40px;
+    /* margin: 20px 0 40px; */
 }
 
 .project-links {
-    margin-right: 50px;
+    /* margin-right: 20px; */
+    padding-right: 50px;
     font-size: 1.125em;
     color: #fff;
     font-weight: 500;
@@ -231,14 +234,13 @@ section {
     width: 50%;
 }
 
-/* .project-card {
-    display: none;
-} */
-
 .project-card.active-card {
     display: flex;
 }
 
+#project-left-link {
+    padding-right: 0px;
+}
 
 /* Content */
 .content {
@@ -280,7 +282,7 @@ section {
 }
 
 .projects {
-    background-color: #000016;
+    background-color: #182444;
     padding: 50px 40px;
 }
 
@@ -361,8 +363,16 @@ section {
     padding: 50px 40px;
 }
 
+#email-card {
+    width:26em;
+}
+
+#email {
+    font-size: 1.2em;
+}
+
 .footer {
-    background-color: #000016;
+    background-color: #182444;
     color: #ffff;
     padding: 2em;
     display: flex;
@@ -377,6 +387,11 @@ section {
 .footer-title span {
     color: #3a6cf4;
 }
+
+.social-icons-footer a {
+        font-size: 1.7em;
+        padding: 20px ;
+    }
 
 @media (max-width: 1250px){
     .about-col-2 {
@@ -458,10 +473,9 @@ section {
         font-size: 1.4em;
     }
 
-    .social-icons a {
-        color:#fff;
-        font-size: 1.7em;
-        padding-right: 10px;
+    .social-icons-footer a {
+        font-size: 1.5em;
+        padding: 9px ;
     }
 
     .about-col-1, .about-col-2 {
@@ -472,6 +486,10 @@ section {
     .about-col-1 {
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    .project-links {
+        padding-right: 30px;
     }
 }
 
@@ -491,6 +509,11 @@ section {
         padding: 25px 50px;
     }
 
+    .social-icons-footer a {
+        font-size: 1.5em;
+        padding: 6px ;
+    }
+
     .main-content h2 {
         font-size: 0.8em;
     }
@@ -502,6 +525,10 @@ section {
     .about-col-1 {
         margin-top: 10px;
         margin-bottom: 20px;
+    }
+
+    .project-links {
+        padding-right: 20px;
     }
 }
 
@@ -534,6 +561,10 @@ section {
     .about-col-2 {
         flex-basis: 100%;
         margin-left: 30px;
+    }
+
+    .project-links {
+        padding-right: 10px;
     }
 }
 

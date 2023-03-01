@@ -35,7 +35,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/code.jpg" alt="">
+                    <img src="images/about.jpg" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -143,7 +143,7 @@
         <div class="project-titles">
             <p class="project-links active-link" onclick="openProjects('web')">Web</p>
             <p class="project-links" onclick="openProjects('machine-learning')">Machine Learning</p>
-            <p class="project-links" onclick="openProjects('applications')">Applications</p>
+            <p class="project-links" id="project-left-link" onclick="openProjects('applications')">Applications</p>
         </div>
         <div class="content">
             <div class="project-card web active-card">
@@ -184,6 +184,18 @@
             </div>
             <div class="project-card applications">
                 <div class="project-image">
+                    <img src="images/huffman.png" alt="code">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">A "Huffman Coding" algorithm-based application to compress/decompress any type of files</p>
+                    <strong class="project-title">
+                        <span>Huffman Compressor & Decompressor</span>
+                        <a href="https://github.com/Abdelrahman-Shawky/Huffman-Compression-Decompression" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card applications">
+                <div class="project-image">
                     <img src="images/fruit-ninja.jpg" alt="code">
                 </div>
                 <div class="project-info">
@@ -202,31 +214,7 @@
                     <p class="project-category">A hotel booking website built using Laravel Framework and MySQL</p>
                     <strong class="project-title">
                         <span>Hotel Booking</span>
-                        <a href="https://github.com/Abdelrahman-Shawky/RestaurantReservation" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card machine-learning">
-                <div class="project-image">
-                    <img src="images/modulation-classification.png" alt="code">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Modulation classification using CNN, RNN and LSTM</p>
-                    <strong class="project-title">
-                        <span>Modulation Classification</span>
-                        <a href="https://github.com/Abdelrahman-Shawky/Modulation-Classification" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card machine-learning">
-                <div class="project-image">
-                    <img src="images/heartbeat.jpg" alt="code">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Regression model predicting the location of the lub and dub in a heartbeat sound</p>
-                    <strong class="project-title">
-                        <span>Heartbeat Sound Segmentation</span>
-                        <a href="https://github.com/Abdelrahman-Shawky/Heartbeat-Sound-Segmentation" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/Abdelrahman-Shawky/Hotel-Booking" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </strong>
                 </div>
             </div>
@@ -266,6 +254,30 @@
                     </strong>
                 </div>
             </div>
+            <div class="project-card machine-learning">
+                <div class="project-image">
+                    <img src="images/heartbeat.jpg" alt="code">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Regression model predicting the location of the lub and dub in a heartbeat sound</p>
+                    <strong class="project-title">
+                        <span>Heartbeat Sound Segmentation</span>
+                        <a href="https://github.com/Abdelrahman-Shawky/Heartbeat-Sound-Segmentation" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card machine-learning">
+                <div class="project-image">
+                    <img src="images/modulation-classification.png" alt="code">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Modulation classification using CNN, RNN and LSTM</p>
+                    <strong class="project-title">
+                        <span>Modulation Classification</span>
+                        <a href="https://github.com/Abdelrahman-Shawky/Modulation-Classification" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </strong>
+                </div>
+            </div>
             <div class="project-card applications">
                 <div class="project-image">
                     <img src="images/connect-four.PNG" alt="code">
@@ -275,18 +287,6 @@
                     <strong class="project-title">
                         <span>Connect Four</span>
                         <a href="https://github.com/Abdelrahman-Shawky/Connect-Four-AI" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card applications">
-                <div class="project-image">
-                    <img src="images/huffman.png" alt="code">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">A "Huffman Coding" algorithm-based application to compress/decompress any type of files</p>
-                    <strong class="project-title">
-                        <span>Huffman Compressor & Decompressor</span>
-                        <a href="https://github.com/Abdelrahman-Shawky/Huffman-Compression-Decompression" class="more-details" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </strong>
                 </div>
             </div>
@@ -350,16 +350,16 @@
                 </div>
                 <div class="info">
                     <h3>Phone</h3>
-                    <p>+20123456789</p>
+                    <p>+201270005501</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" id="email-card">
                 <div class="icon">
                     <i class="fas fa-envelope"></i>
                 </div>
                 <div class="info">
                     <h3>Email</h3>
-                    <p>email@email.com</p>
+                    <p id="email">abdelrahman.a.shawky@gmail.com</p>
                 </div>
             </div>
         </div>
@@ -367,9 +367,9 @@
 
     <footer class="footer">
         <p class="footer-title">Copyrights @ <span>Abdelrahman Shawky</span></p>
-        <div class="social-icons">
+        <div class="social-icons social-icons-footer">
             <a href="https://www.linkedin.com/in/abdelrahman-abdallah1" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/Abdelrahman-Shawky" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/Abdelrahman-Shawky" target="_blank" id="leftmost-icon"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
 
@@ -403,7 +403,6 @@
                 projectCard.classList.add("active-card");
             }
         }
-
     </script>
 
 </body>
