@@ -452,8 +452,9 @@ section {
 @media (max-width:641px) {
 
     .main {
-        background: url(images/background2.jpg) no-repeat;
+        background: url(images/background-med.jpg) no-repeat;
     }
+
     header {
         padding: 12px 9px;
     }
