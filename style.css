@@ -437,6 +437,7 @@ section {
 
     .about-col-2 {
         flex-basis: 100%;
+        padding: 70px;
     }
 
     .about-col-1 {
@@ -450,11 +451,11 @@ section {
 
 @media (max-width:641px) {
     header {
-        padding: 12px 20px;
+        padding: 12px 9px;
     }
 
     .navigation a{
-        padding-left: 10px;
+        padding-left: 6px;
     }
 
     body {
@@ -486,6 +487,10 @@ section {
     .about-col-1 {
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+
+    .tab-links {
+        margin-right: 30px;
     }
 
     .project-links {
@@ -525,6 +530,10 @@ section {
     .about-col-1 {
         margin-top: 10px;
         margin-bottom: 20px;
+    }
+
+    .tab-links {
+        margin-right: 20px;
     }
 
     .project-links {
