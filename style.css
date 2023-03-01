@@ -437,7 +437,7 @@ section {
 
     .about-col-2 {
         flex-basis: 100%;
-        padding: 70px;
+        padding: 50px;
     }
 
     .about-col-1 {
@@ -450,6 +450,10 @@ section {
 }
 
 @media (max-width:641px) {
+
+    .main {
+        background: url(images/background2.jpg) no-repeat;
+    }
     header {
         padding: 12px 9px;
     }
@@ -490,7 +494,7 @@ section {
     }
 
     .tab-links {
-        margin-right: 30px;
+        margin-right: 25px;
     }
 
     .project-links {
